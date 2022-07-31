@@ -38,17 +38,16 @@ header {
     justify-content: space-evenly;
 }
 header > h1 {
-    /* border: 1px solid; */
-    width: calc(360px + 10vw);
+    border: 1px solid;
+    width: calc(400px + 10vw);
     
-    /* min-width: 350px; */
-    /* max-width: 100vw; */
     font-size: 50px;
     font-size: calc(60px + 2vw)
 }
 .intro-text { /* The text beside Hello I'm Daniel */
-    /* border: 1px dotted; */
-    width: calc(300px + 10vw);
+    border: 1px dotted;
+    width: calc(360px + 10vw);
+    
     /* max-width: 100vw; */
     font-size: calc(30px + 2vw);
     padding-top: 70px;
@@ -63,8 +62,10 @@ header > h1 {
 section {
     margin-left:  20px; 
     display: flex; 
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-section > div {
+section > div:first-child {
+    width: 48vw;
 
 }
