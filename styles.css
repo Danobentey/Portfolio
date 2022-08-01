@@ -4,6 +4,8 @@
 body {
     width: ;
 }
+
+/* The Top bar with the logo and menu bar */
 nav {
     width: 100%;
     min-width: calc(200px + 50vh);
@@ -19,16 +21,38 @@ nav {
     margin: auto 2vw;
     font-size: calc(40px + 2vw);
     color: rgb(219, 89, 42);
+    /* transform: rotate(.25turn); */
 }
 .do:hover {
     color: orangered;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 10vw;
+    font-size: calc(20px + 5vw);
     transition-duration: 900ms;
 }
 
-nav > div > span {
-    border: solid 1px;
+
+/* Menu bar (button and dropdown) */
+.nav {
+    display: flex;
+}
+.button {
+    display: none;
+    border: none;
+    background-color: rgb(249, 94, 38);
+    border-radius: 25%;
+}
+svg {
+    background-color: none;
+    fill: orange;
+}
+/*for mobile -- show hidden menu */
+.show {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav > span { 
+    /* border: solid 1px; */
     font-size: calc(10px + 2vw);
     font-family: cursive;
     width: auto;
@@ -36,13 +60,16 @@ nav > div > span {
     padding-right: 1vw;
     border-right: solid 2px orangered;
     cursor: pointer;
-    /* transform: scale(2, 5) skew(10deg); */
+    display: block;
 }
-nav > div > span:hover{
+.nav > span:hover{
     font-size: 4vw;
+    transform: skew(-3deg);
     border-right: 6px solid orangered;
-    transition-duration: 1300ms;
+    transition-duration: 300ms;
 }
+
+
 
 
 /* The Introduction are greeting, Name etc.  */
@@ -101,4 +128,13 @@ section > div > img {
     width: calc(50vw);
     max-width: 360px;
 
+}
+
+@media  screen and (max-width: 900px) {
+    .nav > span {display: none;}
+    .button {display: block;}
+    .arrow {
+        margin: 0;
+        transform: translate(50vw);
+    }
 }
