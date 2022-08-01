@@ -1,5 +1,5 @@
 * {
-    font-size: calc(30px + 2vw);
+    /* font-size: calc(30px + 2vw); */
 }
 body {
     width: ;
@@ -18,13 +18,32 @@ nav {
 .do { /* logo with name initial DO. */
     margin: auto 2vw;
     font-size: calc(40px + 2vw);
+    color: rgb(219, 89, 42);
+}
+.do:hover {
+    color: orangered;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10vw;
+    transition-duration: 900ms;
 }
 
 nav > div > span {
-    font-size: calc(10px + 2vw);;
+    border: solid 1px;
+    font-size: calc(10px + 2vw);
+    font-family: cursive;
     width: auto;
     margin: 0 10px;
+    padding-right: 1vw;
+    border-right: solid 2px orangered;
+    cursor: pointer;
+    /* transform: scale(2, 5) skew(10deg); */
 }
+nav > div > span:hover{
+    font-size: 4vw;
+    border-right: 6px solid orangered;
+    transition-duration: 1300ms;
+}
+
 
 /* The Introduction are greeting, Name etc.  */
 header {
@@ -38,19 +57,21 @@ header {
     justify-content: space-evenly;
 }
 header > h1 {
-    border: 1px solid;
+    /* border: 1px solid; */
     width: calc(400px + 10vw);
     
-    font-size: 50px;
-    font-size: calc(60px + 2vw)
+   
+    font-size: calc(60px + 2vw);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .intro-text { /* The text beside Hello I'm Daniel */
-    border: 1px dotted;
+    /* border: 1px dotted; */
     width: calc(360px + 10vw);
     
     /* max-width: 100vw; */
-    font-size: calc(30px + 2vw);
-    padding-top: 70px;
+    font-size: calc(20px + 2vw);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 150px;
 }
 
 /* Seperation Arrow */
@@ -60,12 +81,24 @@ header > h1 {
 }
 /* Actual content */
 section {
+    /* width: 80vw; */
+    /* margin-left: 10px; */
+    padding: 20vh 0;
+    font-size: calc(10px + 1vw);
     margin-left:  20px; 
     display: flex; 
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
+    border-bottom: solid;
 }
 section > div:first-child {
-    width: 48vw;
+    width: calc(460px + 10vw);
+
+}
+section > div > img {
+    border: solid;
+    width: calc(50vw);
+    max-width: 360px;
 
 }
