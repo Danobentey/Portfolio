@@ -69,6 +69,10 @@ svg {
     transition-duration: 300ms;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 
 
