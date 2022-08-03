@@ -1,3 +1,2 @@
-dropdown = function() {
-    let x = document.getElementsByClassName
-}
+const x 
+document.querySelector(".button").addEventListener('click', x)

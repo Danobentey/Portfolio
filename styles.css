@@ -1,23 +1,22 @@
-* {
-    /* font-size: calc(30px + 2vw); */
-}
-body {
-    width: ;
-}
+
+/* body {
+    width: 100%;
+} */
 
 /* The Top bar with the logo and menu bar */
 nav {
+    /* border: solid; */
     width: 100%;
-    min-width: calc(200px + 50vh);
-    
-    
+    /* width: calc(200px + 50vh); */
     line-height: 35px;
     margin: 5vh auto;
-
     display: flex;
     justify-content: space-between;
 }
-.do { /* logo with name initial DO. */
+
+/* logo with name initial DO. */
+.do { 
+    /* border: solid; */
     margin: auto 2vw;
     font-size: calc(40px + 2vw);
     color: rgb(219, 89, 42);
@@ -37,6 +36,7 @@ nav {
 }
 .button {
     display: none;
+    margin: auto;
     border: none;
     background-color: rgb(249, 94, 38);
     border-radius: 25%;
@@ -45,6 +45,7 @@ svg {
     background-color: none;
     fill: orange;
 }
+
 /*for mobile -- show hidden menu */
 .show {
     display: flex;
@@ -64,6 +65,7 @@ svg {
 }
 .nav > span:hover{
     font-size: 4vw;
+    color:rgb(255, 60, 0);
     transform: skew(-3deg);
     border-right: 6px solid orangered;
     transition-duration: 300ms;
@@ -77,68 +79,103 @@ a {
 
 
 /* The Introduction are greeting, Name etc.  */
-header {
-    /* border: solid; */
-    width: 100%;
-    min-width: calc(200px + 50vh);
-    margin: 130px auto;
+.header {
+    /* border: solid green; */
+    margin: 9vw auto;
+    
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-header > h1 {
+.header > h1 {
     /* border: 1px solid; */
-    width: calc(400px + 10vw);
-    
-   
-    font-size: calc(60px + 2vw);
+    width: calc(600px + 1vw);
+    font-size: calc(100px + 1vw);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header > h1:hover {
+    color: rgb(200, 81, 38);
+    transition-duration: 1500ms;
+    transform-origin: center;
+    /* background-color: azure; */
+    /* transition-delay: 300ms;
+    transition-duration: 1200ms; */
 }
 .intro-text { /* The text beside Hello I'm Daniel */
     /* border: 1px dotted; */
-    width: calc(360px + 10vw);
-    
-    /* max-width: 100vw; */
+    width: calc(300px + 15vw);
+    color:rgb(255, 60, 0);
     font-size: calc(20px + 2vw);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 150px;
 }
-
+.intro-text:hover {
+    color:rgb(219, 89, 42);
+}
 /* Seperation Arrow */
 .arrow{
-    margin: auto 20px;
+    /* margin: px 20px; */
+    width: 4vw;
+    transform: translate(50vw);
+    background-color: orangered;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 5vh;
 
 }
+
 /* Actual content */
 section {
-    /* width: 80vw; */
-    /* margin-left: 10px; */
-    padding: 20vh 0;
-    font-size: calc(10px + 1vw);
-    margin-left:  20px; 
+    width: 80vw;
+    /* border: solid; */
+    /* margin-left: 10px;*/
+    /* border: solid; */
+    padding: 10vh 0;
+    font-size: 2vw;
+    margin:  auto; 
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-evenly;
-
     border-bottom: solid;
 }
 section > div:first-child {
-    width: calc(460px + 10vw);
+    width: calc(760px + 5vw);
 
 }
 section > div > img {
-    border: solid;
-    width: calc(50vw);
-    max-width: 360px;
+    border: 1px solid;
+    min-width: 380px;
+    width: calc(300px + 20vw);
 
 }
 
 @media  screen and (max-width: 900px) {
-    .nav > span {display: none;}
-    .button {display: block;}
+    .nav > span {
+        display: none;
+    }
+    .button {
+        display: block;
+    }
+    .header > h1 {
+        /* border: 1px solid; */
+        width: calc(400px + 1vw);
+        font-size: calc(60px + 1vw);
+    }
     .arrow {
         margin: 0;
-        transform: translate(50vw);
+        transform: translate(50vw) scale(1.3);
+    }
+    section{
+    text-align: center;
+    font-size: calc(15px + 2.9vw);
+    /* justify-content: center; */
+    }
+
+    section > div > img {
+        display: block;
+        margin-top: 30px;
+        /* border: 1p/x solid; */
+        max-width: calc(300px);
     }
 }
