@@ -153,8 +153,8 @@ section > div > img {
 
 @media  screen and (max-width: 900px) {
     .nav {
-        width: 100vw ;
-        margin-right: 0;
+        /* width: 100vw ; */
+        margin-right: 3vw;
     }
     .nav > span {
         display: none;
@@ -176,10 +176,10 @@ section > div > img {
     font-size: calc(15px + 2.9vw);
     /* justify-content: center; */
     }
-    .project-name{
+    /* .project-name{
         font-size: 10px;
 
-    }
+    } */
 
     section > div > img {
         display: block;
