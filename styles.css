@@ -33,6 +33,7 @@ nav {
 /* Menu bar (button and dropdown) */
 .nav {
     display: flex;
+    /* width: 100vw; */
 }
 .button {
     display: none;
@@ -151,6 +152,10 @@ section > div > img {
 }
 
 @media  screen and (max-width: 900px) {
+    .nav {
+        width: 100vw ;
+        margin-right: 0;
+    }
     .nav > span {
         display: none;
     }
@@ -170,6 +175,10 @@ section > div > img {
     text-align: center;
     font-size: calc(15px + 2.9vw);
     /* justify-content: center; */
+    }
+    .project-name{
+        font-size: 10px;
+
     }
 
     section > div > img {
