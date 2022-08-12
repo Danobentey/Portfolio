@@ -4,7 +4,7 @@
 } */
 
 /* The Top bar with the logo and menu bar */
-nav {
+.top_bar {
     /* border: solid; */
     width: 100%;
     /* width: calc(200px + 50vh); */
@@ -47,11 +47,7 @@ svg {
     fill: orange;
 }
 
-/*for mobile -- show hidden menu */
-.show {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 .nav > span { 
     /* border: solid 1px; */
@@ -153,14 +149,36 @@ section > div > img {
 
 @media  screen and (max-width: 900px) {
     .nav {
-        /* width: 100vw ; */
-        margin-right: 3vw;
+        /* border: 2px solid; */
+        display: none;
+        position: absolute;
+        right: 3vw;
+        top: 100px;
+        flex-wrap: wrap;
+        width: min-content;
+        background-color: rgba(255, 255, 255, 0.802);
     }
     .nav > span {
-        display: none;
+        border-right: none;
+        color:rgb(200, 81, 38);
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+    .nav > span:hover {
+        border: 0;
+        font-size: 3rem;
+        border-bottom: 2px solid orangered;
+
+    }
+   /*for mobile -- show hidden menu */
+    .show {
+        display: flex;
+        flex-wrap: wrap;
     }
     .button {
         display: block;
+        margin-right: 2.5vw;
+        z-index: 5;
     }
     .header > h1 {
         /* border: 1px solid; */
